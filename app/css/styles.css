@@ -1,0 +1,453 @@
+section, header, footer, .section {
+  position: relative;
+  width: 100%;
+}
+
+a {
+  -webkit-transition: 300ms all linear;
+  -o-transition: 300ms all linear;
+  transition: 300ms all linear;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: "Fira";
+  src: url("../fonts/FiraSans-Bold.eot");
+  src: url("../fonts/FiraSans-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraSans-Bold.woff") format("woff"), url("../fonts/FiraSans-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Fira";
+  src: url("../fonts/FiraSans-Regular.eot");
+  src: url("../fonts/FiraSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraSans-Regular.woff") format("woff"), url("../fonts/FiraSans-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Fira";
+  src: url("../fonts/FiraSans-Medium.eot");
+  src: url("../fonts/FiraSans-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraSans-Medium.woff") format("woff"), url("../fonts/FiraSans-Medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Fira";
+  src: url("../fonts/FiraSans-ExtraBold.eot");
+  src: url("../fonts/FiraSans-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraSans-ExtraBold.woff") format("woff"), url("../fonts/FiraSans-ExtraBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 800;
+}
+
+body, html {
+  height: 100%;
+}
+
+body {
+  font-family: "Fira";
+  background: #30353b;
+  color: #535c65;
+}
+
+strong, b {
+  font-weight: bold;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-appearance: none;
+}
+
+.wrapper {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  width: 100%;
+  min-height: -webkit-calc(100vh - 45px);
+  min-height: calc(100vh - 45px);
+}
+
+.inner {
+  position: relative;
+  margin: 0 auto;
+  padding: 32px;
+  max-width: 1105px;
+  max-height: 900px;
+  width: 100%;
+  display: block;
+  background: url(../images/mood.jpg) center no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  -webkit-box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  max-width: 290px;
+  height: 78px;
+  width: 100%;
+  background: #e4e4e5;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 25px;
+}
+
+.logo:hover {
+  background: #fff;
+}
+
+.catalog-item {
+  max-width: 420px;
+  width: 100%;
+}
+
+.catalog-item__name {
+  padding: 15px;
+  width: 100%;
+  background: #30353b;
+  font-size: 22px;
+  line-height: 33px;
+  color: #f2f2f2;
+}
+
+.catalog-item__content {
+  padding: 28px 15px 0;
+  background: #f0f1f1;
+}
+
+.catalog-item ul {
+  padding-left: 4px;
+  padding-bottom: 29px;
+  border-bottom: 1px solid #dbdbdb;
+  margin-bottom: 28px;
+}
+
+.catalog-item ul li {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  color: #535c65;
+  margin-bottom: 10px;
+  position: relative;
+  font-weight: 500;
+}
+
+.catalog-item ul li:last-child {
+  margin-bottom: 0;
+}
+
+.catalog-item ul li:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f00c";
+  margin-right: 7px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.catalog-item__price {
+  position: relative;
+  padding-left: 50px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 32px;
+}
+
+.catalog-item__price:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f058";
+  font-weight: 600;
+  font-size: 56px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  color: #bee716;
+  margin-right: 18px;
+}
+
+.catalog-item__price span {
+  display: block;
+  color: #535c65;
+}
+
+.catalog-item__price span.new {
+  text-transform: uppercase;
+  font-size: 42px;
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+
+.catalog-item__price span.old {
+  text-decoration: line-through;
+  font-weight: 500;
+}
+
+.catalog-item__price .wrap {
+  width: -webkit-calc(100% - 60px);
+  width: calc(100% - 60px);
+}
+
+.catalog-item__button {
+  min-height: 63px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding: 15px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 22px;
+  background: #ff7607;
+  -webkit-transition: 500ms all linear;
+  -o-transition: 500ms all linear;
+  transition: 500ms all linear;
+}
+
+.catalog-item__button:hover {
+  font-size: 23px;
+}
+
+.catalog-item__button.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.popup {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  max-width: 460px;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 31px 32px;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: 300ms all ease-in-out;
+  -o-transition: 300ms all ease-in-out;
+  transition: 300ms all ease-in-out;
+}
+
+.popup.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup p {
+  font-size: 12px;
+  line-height: 18px;
+  margin-bottom: 20px;
+}
+
+.popup p:last-child {
+  margin-bottom: 0;
+}
+
+.popup__title {
+  font-size: 22px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #707b87;
+  margin-bottom: 38px;
+}
+
+.popup__close {
+  position: absolute;
+  right: 10px;
+  top: 6px;
+  font-size: 21px;
+  -webkit-transition: 300ms all linear;
+  -o-transition: 300ms all linear;
+  transition: 300ms all linear;
+  cursor: pointer;
+}
+
+.popup__close:hover {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+footer {
+  margin-top: auto;
+  text-align: center;
+  height: 45px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer p {
+  color: #ccc;
+  font-size: 14px;
+}
+
+.mobile-show {
+  display: none;
+}
+
+@media (max-width: 960px) {
+  .popup {
+    max-width: 100%;
+    height: 100vh;
+    background: #fff;
+  }
+}
+
+@media (max-width: 768px) {
+  .inner {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    background: none;
+    padding: 0;
+    max-height: 100%;
+  }
+  .logo {
+    width: 100%;
+    max-width: 100%;
+    background: #fff;
+  }
+  .mobile-show {
+    margin: 0 auto 15px;
+    display: block;
+  }
+  .popup {
+    height: auto;
+    position: relative;
+    max-height: 0px;
+    overflow: hidden;
+    background: #fff;
+    right: auto;
+    top: -63px;
+    margin-bottom: -49px;
+  }
+  .popup.active {
+    max-height: 1000px;
+  }
+  .catalog-item {
+    width: 100%;
+    max-width: 100%;
+  }
+  .catalog-item ul {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .catalog-item ul li {
+    line-height: 21px;
+  }
+  .catalog-item__price {
+    max-width: 300px;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .catalog-item__button {
+    font-size: 16px;
+  }
+  .catalog-item__button:hover {
+    font-size: 16px;
+  }
+}

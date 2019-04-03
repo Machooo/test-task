@@ -1,0 +1,4 @@
+@function path($src, $dir: images) {
+	$src: unquote($src);
+	@return url(unquote("..")/$dir/$src);
+}
